@@ -1,0 +1,19 @@
+{
+  "name": "com533-newssite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bad0boi/com533-newsSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bad0boi/com533-newsSite/issues"
+  },
+  "homepage": "https://github.com/bad0boi/com533-newsSite#readme"
+}
