@@ -1,0 +1,13 @@
+body { 
+    margin: 0;
+    background-color: #fff;
+}
+
+html { 
+    scroll-behavior: smooth;
+}
+
+section { 
+    background-color: indianred;
+    
+}
