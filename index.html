@@ -32,7 +32,7 @@
 			  <a class="nav-link" href="#top-news"><strong>HOME</strong><span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-			  <a class="nav-link" href="#">SPORT</a>
+			  <a class="nav-link" href="#sportsNews">SPORT</a>
 			</li>
 			<li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -90,11 +90,28 @@
 
 </div>
 
+<!--Featured-->
+
+<div class="card text-center">
+	<div class="card-header">
+	  Featured
+	</div>
+	<div class="card-body">
+	  <h5 class="card-title">Special title treatment</h5>
+	  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+	  <a href="#" class="btn btn-primary">Go somewhere</a>
+	</div>
+	<div class="card-footer text-muted">
+	  2 days ago
+	</div>
+  </div>
+
 <!--TOP NEWS SECTION-->
 
 <div id="top-news" class="container">
         <div class="guardian-search">
-			<h1><strong>Todays top</strong> news</h1>
+			<h1><strong>Todays latest</strong> news: keep track on what's going on</h1> 
+			<br>
 			<form class="form-inline my-2 my-lg-0">
 			
 				<!--SEARCH BAR-->
@@ -106,16 +123,37 @@
             <div class="row pt-5" id="search-results"></div>
         </div>
 
-    </div>
+	</div>
 
 
+<!--Different News Columns-->
+<div style="background-color: #b7b7b7; class="container p-5">
+	<div class="row p-5">
+	  <div id="sportsNews" class="col-sm">
+		<h2>SPORTS</h2>
+	  </div>
+	  <div id="technologyNews" class="col-sm">
+		<h2>TECHNOLOGY</h2>
+	  </div>
+	  <div id="travelNews" class="col-sm">
+		<h2>TRAVEL</h2>
+	  </div>
+	</div>
+  </div>
 
-	<section id="travel">
+  <!--About Us-->
+
+ 
+
+
+<!--GiTHUB users api example below: -->
+
+	<!-- <section id="travel">
 		<div id="users">
 
 		</div>
 	</section>
-	
+	 -->
 
 
 
@@ -123,7 +161,7 @@
 
 <!--SCRIPTS-->
 <script   src="https://code.jquery.com/jquery-3.4.1.min.js"
-integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script> <!--jQuery å-->
   <script src="js/scripts.js"></script>
   <script src="js/api.js"></script>
   <script src="js/guardian-api.js"></script>
