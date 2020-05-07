@@ -13,6 +13,7 @@
   <!--Stylesheets-->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!--bootstrap-->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
   <!--Libraries-->
  
 
@@ -21,7 +22,7 @@
 <body>
 <!-- Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Kearney's News Hub</a>
+		<a class="navbar-brand" href="#"> <i class="fab fa-hubspot"></i> Kearney's News Hub</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -32,15 +33,27 @@
 			  <a class="nav-link" href="#top-news"><strong>HOME</strong><span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
+					<a class="nav-link" href="#top-news">LATEST</a>
+				  </li>
+			<li class="nav-item">
 			  <a class="nav-link" href="#sportsNews">SPORT</a>
 			</li>
+			<li class="nav-item">
+					<a class="nav-link" href="#moviesNews">MOVIES</a>
+				  </li>
+			<li class="nav-item">
+				<a class="nav-link" href="#techNews">TECHNOLOGY</a>
+			  </li>
+			  <li class="nav-item">
+					<a class="nav-link" href="#about-footer">ABOUT</a>
+				  </li>
 			<li class="nav-item dropdown">
 			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				OTHERS
 			  </a>
 			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="#travel">TRAVEL</a>
-				<a class="dropdown-item" href="#">TECHNOLOGY</a>
+				<a class="dropdown-item" href="#travelNews">TRAVEL</a>
+				<a class="dropdown-item" href="#scienceNews">SCIENCE</a>
 				<div class="dropdown-divider"></div>
 				<a class="dropdown-item" href="#">WEATHER</a>
 			  </div>
@@ -82,11 +95,20 @@
 	  </div>
 <!--Banner-->
 <div style="text-align: center;" class="p-5" id="banner"> 
-		<h1> Kearney's News Hub</h1>
+		<h1> Kearney's News Hub <i class="fas fa-newspaper fa-sm"></i></h1>
 		<h3> ABOUT US </h3>	<br>
 			<p> <strong>We</strong> strive to bring the best of both worlds of visual aesthetic and news delivery</p> 
 			<p> <strong>Above</strong> are our favourite images of the day</p>
 			<p><strong>Below</strong> you will find a range of news that we feel you should read</p>
+			
+		
+		<div class="weather-api">
+			<h3>Weather</h3>
+			<img src="" alt="" id="icon">
+			<div id="temp">°</div>
+			<div id="weather-location"></div>
+		</div>
+			
 
 </div>
 
@@ -96,21 +118,65 @@
 	<div class="card-header">
 	  Featured
 	</div>
-	<div class="card-body">
-	  <h5 class="card-title">Special title treatment</h5>
-	  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-	  <a href="#" class="btn btn-primary">Go somewhere</a>
+<!--COVID-19 API-->
+	<div id="covid-section" class="card-body" style="background-color: #FAC22B;">
+		
+		<div class="alert alert-warning w-50" style="margin: 0 auto;" role="alert">
+			<h5 class="card-title"><i class="fas fa-lungs-virus"></i> Latest COVID-19 Updates <span style="color: blue;">(UK)</span></h5>
+				<p class="card-text" id="covid"></p>
+				<p class="card-text" id="covidDeaths"><span style="color: red;">(deaths)</span> </p>
+				<p class="card-text" id="covidCritical"><span style="color: orange;">(critical)</span> </p>
+				<p class="card-text" id="covidCritical">(recovery) n/a</p>
+				<button type="button" id="covid-readMore" class="btn btn-info">Read More</button>
+				  </div>
+				</div>
+	<div class="covid-info m-5">
+		<h2><i class="fas fa-globe-americas"></i> Worldwide Pandemic Statistics</h2>
+			<h3>Key reasons to follow guidelines...</h3>
+				<h3 style="color:blue;">Reported Cases</h3>
+					<p class="covid-cases"></p>
+				<h3 style="color:red;">Reported Deaths</h3>
+					<p class="covid-deaths"></p>
+				<h3 style="color:green; ">Reported Recovery</h3>
+					<p class="covid-recovered"></p>
 	</div>
+
 	<div class="card-footer text-muted">
-	  2 days ago
+	  <h2><i class="fas fa-battery-full"></i> Powered By:</h2>
+	  <div class="row pt-5">
+		<div class="col-sm-3">
+			<img src="css/imgs/theGuardian.svg" style="width: 200px; height: 80px;" 
+				alt="Guardian News">
+	</div>
+		<div class="col-sm-2">
+			<img src="css/imgs/github-logo.png" style="width: 200px; height: 80px;" 
+		alt="Github Logo">
+	</div>
+		<div class="col-sm-2">
+			<img src="css/imgs/openweather.png" style="width: 200px; height: 80px;" 
+		alt="Openweathermap Logo">
+	</div>
+	
+		<div class="col-sm-2">
+			<img src="css/imgs/rapid-api.png" style="width: 200px; height: 80px;" 
+		alt="Rapid Api Logo">
+	</div>
+		<div class="col-sm-2">
+			<img src="css/imgs/iconmonstr.jpg" style="width: 200px; height: 100px;" 
+		alt="Iconmonstr Logo">
+	</div>
+
+		
+	
+	  </div>
 	</div>
   </div>
 
 <!--TOP NEWS SECTION-->
 
-<div id="top-news" class="container">
-        <div class="guardian-search">
-			<h1><strong>Todays latest</strong> news: keep track on what's going on</h1> 
+<div id="top-news" class="container-lg mt-5">
+	 <div class="guardian-search">
+		<h1><strong>Todays latest</strong> news: keep track on what's going on</h1> 
 			<br>
 			<form class="form-inline my-2 my-lg-0">
 			
@@ -126,45 +192,285 @@
 	</div>
 
 
-<!--Different News Columns-->
-<div style="background-color: #b7b7b7; class="container p-5">
-	<div class="row p-5">
-	  <div id="sportsNews" class="col-sm">
-		<h2>SPORTS</h2>
+<!-- Other News Columns-->
+
+<div id="sportsNews" class="section p-5"  style="background-color: #FAC22B;"> 
+		<h1><i class="fas fa-baseball-ball"></i> SPORTS</h1>
+		<h2>Most up to date and breaking news </h2>
+
+		<div class="row mt-5">
+			<div class="col-md-6 p-5">
+				
+				<h2><img src="css/imgs/epl.png" style="width: 220px; height: 100px;"" alt="EPL Logo">
+					 Top 3 (football) </h2>
+					<div class="top-3">
+						<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mb-4" data-toggle="modal" data-target="#eplTable">
+		Full Table
+	  </button>
+	  
+	  <!-- Modal -->
+	  <div class="modal fade" id="eplTable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+		<div class="modal-dialog modal-xl" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="exampleModalLongTitle">2020 Premier League Standings</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			
+			<table class="table">
+					<thead>
+					<tr>
+						<th scope="col">Crest</th>
+						<th scope="col">Team</th>
+						<th scope="col">Won</th>
+						<th scope="col">Lost</th>
+						<th scope="col">Draws</th>
+						<th scope="col">Points</th>
+						<th scope="col">Position</th>
+					</tr>
+					</thead>
+					<tbody id="full-epl-table">
+					<!-- Full EPL Table display via API.-->
+					</tbody>
+				</table>
+			</div>
+			
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+			</div>
+		  </div>
+		</div>
 	  </div>
-	  <div id="technologyNews" class="col-sm">
+					</div>
+			</div>
+			<div class="col-md-6 p-5">
+					<h2>Latest News: <i class="far fa-plus-square"></i>  </h2>
+						<div class="sports-latest"></div>
+				</div>
+		</div>
+
+			
+		</div>
+
+		
+	  <!-- <div id="technologyNews" class="col-md-4">
 		<h2>TECHNOLOGY</h2>
 	  </div>
-	  <div id="travelNews" class="col-sm">
+	  <div id="travelNews" class="col-md-4">
 		<h2>TRAVEL</h2>
-	  </div>
+	  </div> -->
 	</div>
   </div>
 
-  <!--About Us-->
+  <div id="techNews" class="section p-5">
+	  
+		  <div class="col">
+			  <h1><i class="fas fa-wifi"></i> TECHNOLOGY</h1>
+				  <h2>Our technological future</h2>
+				  <button type="button" id="techOpen" class="btn btn-primary">Open</button>
+				  <div class="row p-5" id="tech-latest">
+					<!--Tech news api results-->
+				  </div>
+		  
+	  </div>
+  </div>
 
- 
+  <div id="travelNews" class="section p-5">
+	  
+		<div class="col">
+			<h1><i class="fas fa-route"></i> TRAVEL</h1>
+				<h2>Travelling allows us to learn new cultures and different ways of living</h2>
+				<button type="button" id="techOpen" class="btn btn-primary">Open</button>
+				<div class="row p-5" id="tech-latest">
+				  <!--Tech news api results-->
+				</div>
+		
+	</div>
+</div>
 
+<div id="scienceNews"  class="section p-5">
+	  
+		<div class="col">
+			<h1><i class="fas fa-flask"></i> SCIENCE</h1>
+				<h2>We continue to evolve each day</h2>
+				<button type="button" id="techOpen" class="btn btn-primary">Open</button>
+				<div class="row p-5" id="tech-latest">
+				  <!--Tech news api results-->
+				</div>
+		
+	</div>
+</div>
 
-<!--GiTHUB users api example below: -->
+<!-- Footer -->
 
-	<!-- <section id="travel">
-		<div id="users">
+<footer id="about-footer" class="footer">
+	<div class="container">
+		<!-- Footer -->
+	<footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
+		<!-- Footer Links -->
+		<div class="container text-center text-md-left">
+	  
+		  <!-- Grid row -->
+		  <div class="row">
+	  
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+	  
+			  <!-- Content -->
+			  <h5 class="font-weight-bold text-uppercase mb-4">About Us</h5>
+			  <p>Here at Kearney's News Hub, we strive to deliver and provide the 
+				  most reliable news from the worlds top news outlets.
+			  </p>
+			  <p>Please explore our website and ensure to consume today's most informative 
+				  news. Keep track on what's going around the world and be inspired! 
+			  </p>
+
+			  <button type="button" class="btn btn-primary">
+				<a href="#" style="color: white; ">Return Top</a>
+			  </button>
+	  
+			</div>
+			<!-- Grid column -->
+	  
+			<hr class="clearfix w-100 d-md-none">
+	  
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+	  
+			  <!-- Links -->
+			  <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+	  
+			  <ul class="list-unstyled">
+				<li>
+				  <p>
+					<a href="#">COVID-19</a>
+				  </p>
+				</li>
+				<li>
+				  <p>
+					<a href="#!">SPORT</a>
+				  </p>
+				</li>
+				<li>
+				  <p>
+					<a href="#!">TODAY</a>
+				  </p>
+				</li>
+				<li>
+				  <p>
+					<a href="#!">TECH</a>
+				  </p>
+				</li>
+			  </ul>
+	  
+			</div>
+			<!-- Grid column -->
+	  
+			<hr class="clearfix w-100 d-md-none">
+	  
+			<!-- Grid column -->
+			<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+	  
+			  <!-- Contact details -->
+			  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+	  
+			  <ul class="list-unstyled">
+				<li>
+				  <p>
+					<i class="fas fa-home mr-3"></i> Northern Ireland, United Kingdom</p>
+				</li>
+				<li>
+				  <p>
+					<i class="fas fa-envelope mr-3"></i> kearneys-newshub@gmail.com</p>
+				</li>
+				<li>
+				  <p>
+					<i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+				</li>
+				<li>
+				  <p>
+					<i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+				</li>
+			  </ul>
+	  
+			</div>
+			<!-- Grid column -->
+	  
+			<hr class="clearfix w-100 d-md-none">
+	  
+			<!-- Grid column -->
+			<div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+	  
+			  <!-- Social buttons -->
+			  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+	  
+			  <!-- Facebook -->
+			  <a type="button" class="btn-floating btn-fb">
+				<i class="fab fa-facebook-f"></i>
+			  </a>
+			  <!-- Twitter -->
+			  <a type="button" class="btn-floating btn-tw">
+				<i class="fab fa-twitter"></i>
+			  </a>
+			  <!-- Google +-->
+			  <a type="button" class="btn-floating btn-gplus">
+				<i class="fab fa-google-plus-g"></i>
+			  </a>
+			  <!-- Dribbble -->
+			  <a type="button" class="btn-floating btn-dribbble">
+				<i class="fab fa-dribbble"></i>
+			  </a>
+	  
+			</div>
+			<!-- Grid column -->
+	  
+		  </div>
+		  <!-- Grid row -->
+	  
 		</div>
-	</section>
-	 -->
+		<!-- Footer Links -->
+	  
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3">© 2020 Copyright | Ryan Kearney | COM533 | Rich Internet Application 
+		<!--  <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>> -->
+		</div>
+
+	  
+	  </footer>
+	  <!-- Footer -->
+	</div>
+</footer>
+
+<!-- Cookies -->
+
+<div id="cookieConsent" style="display: block;"><div id="closeCookieConsent"></div>
+	This website is using cookies
+	 <a href="https://www.itgovernance.eu/blog/en/how-the-gdpr-affects-cookie-policies"> 
+		Find out more here... </a> <a class="cookieConsentOK">I Understand</a> </div>
 
 
 
 
 
 <!--SCRIPTS-->
-<script   src="https://code.jquery.com/jquery-3.4.1.min.js"
+	<script   src="https://code.jquery.com/jquery-3.4.1.min.js"
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script> <!--jQuery å-->
-  <script src="js/scripts.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/guardian-api.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="js/guardian-api.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="js/covidApi.js"></script>
+	<script src="js/weatherapi.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="https://kit.fontawesome.com/3e0003551d.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.16/svg.min.js"></script>
+	<script src="js/cookie.js"></script>
+	<script src="js/top-three.js"></script>
+	<script src="js/epl-table.js"></script>
+	<script src="js/latest-news.js"></script>
+
 </body>
 </html>

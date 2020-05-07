@@ -17,7 +17,7 @@ $(document).ready(function () {
 
     function resultTemplate(result) {
         return `
-            <div class="result col-md-4">
+            <div class="result col-md-4 p-3">
                 <div class="card">
                     <a href="${result.webUrl}" class="result-img">
                         <img src="${result.fields.thumbnail}" class="card-img-top">
@@ -27,7 +27,7 @@ $(document).ready(function () {
                         <div class="result-section">
                             <span>${result.sectionName}</span>
                         </div>
-                        <a href="${result.webUrl}" class="btn btn-primary">Read More</a>
+                        <a href="${result.webUrl}" class="btn btn-primary" target="_blank">Read More</a>
                     </div>
                 </div>
             </div>

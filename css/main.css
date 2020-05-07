@@ -1,13 +1,108 @@
+/*General Settings*/ 
+
 body { 
     margin: 0;
     background-color: #fff;
+    font-family: 'Lexend Deca', sans-serif;
+    
 }
 
+* { 
+    font-family: 'Lexend Deca', sans-serif;
+}
 html { 
     scroll-behavior: smooth;
 }
 
-section { 
-    background-color: indianred;
-    
+.container { 
+    margin: 0;
 }
+
+
+.col-md-4 {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    -webkit-transition: box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+    padding: 20px;
+}
+
+.col-md-6 { 
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    -webkit-transition: box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+    padding: 10px;
+}
+
+/* Custom */ 
+
+
+.section { 
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    -webkit-transition: box-shadow 0.25s ease-in;
+    transition: box-shadow 0.25s ease-in;
+    padding: 20px;
+}
+
+#cookieConsent { 
+    background-color: black;
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+    opacity: 0.8;
+}
+
+#cookieConsent a.cookieConsentOK {
+    background-color: #FAC22B;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+
+a.cookieConsentOK:hover {
+    opacity: 0.5;
+}
+
+
+#techNews.section {
+    background-image: url("imgs/backgrounds/tech.jpg");
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#travelNews.section { 
+    background-image: url('imgs/backgrounds/travel.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#scienceNews.section { 
+    background-image: url('imgs/backgrounds/science.jpg');
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
